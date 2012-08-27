@@ -4,7 +4,7 @@
 
   <groupId>dk.statsbiblioteket.mediaplatform.bes.mediafilelog.batch</groupId>
   <artifactId>bes-media-file-status-log</artifactId>
-  <version>1.0.1-SNAPSHOT</version><!-- -SNAPSHOT -->
+  <version>1.0.1</version><!-- -SNAPSHOT -->
   <packaging>jar</packaging>
 
   <name>bes-media-file-status-log</name>
