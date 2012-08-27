@@ -105,7 +105,7 @@ public class CommandLineHandler {
         return stdInList;
     }
 
-    public static List<String> extractShardPidsFromTextFile(String filename) {
+    public static List<String> extractShardPidsFromTextFile(String filename) throws IOException {
         List<String> shardPids;
         File shardPidFile = new File(filename);
         BufferedReader in = null;
@@ -125,6 +125,7 @@ public class CommandLineHandler {
             System.err.println("Could not read file: " + shardPidFile.getAbsolutePath());
             System.exit(3);
         }
+        in.close();
         return shardPids;
     }
 

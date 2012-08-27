@@ -5,7 +5,6 @@ import static org.junit.Assert.*;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Collections;
@@ -18,7 +17,6 @@ import org.apache.log4j.xml.DOMConfigurator;
 import org.hibernate.SessionFactory;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 import dk.statsbiblioteket.mediaplatform.bes.mediafilelog.batch.db.Metadata;
@@ -32,7 +30,6 @@ import dk.statsbiblioteket.mediaplatform.bes.mediafilelog.batch.extraction.model
 
 public class MediaInfoServiceTest {
 
-    private static final DecimalFormat twoPlaces = new DecimalFormat("00");
     private static final String DATE_PATTERN = "yyyy-MM-dd HH:mm:ss";
     private static final SimpleDateFormat sdf = new SimpleDateFormat(DATE_PATTERN);
 

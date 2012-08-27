@@ -7,7 +7,6 @@ import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.hibernate.classic.Session;
 
-import dk.statsbiblioteket.mediaplatform.bes.mediafilelog.batch.db.Job;
 import dk.statsbiblioteket.mediaplatform.bes.mediafilelog.batch.db.Metadata;
 import dk.statsbiblioteket.mediaplatform.bes.mediafilelog.batch.db.PreviewMediaInfo;
 import dk.statsbiblioteket.mediaplatform.bes.mediafilelog.batch.db.ProgramMediaInfo;

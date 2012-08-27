@@ -136,11 +136,11 @@
         <artifactId>maven-assembly-plugin</artifactId>
         <version>2.2.2</version>
         <configuration>
-          <!--descriptors> <descriptor>src/main/assembly/jar-with-dependencies-packed.xml</descriptor> 
-            </descriptors -->
-          <descriptorRefs>
-            <descriptorRef>jar-with-dependencies</descriptorRef>
-          </descriptorRefs>
+          <descriptors>
+            <descriptor>src/main/assembly/create-package.xml</descriptor>
+          </descriptors>
+          <!--descriptorRefs> <descriptorRef>jar-with-dependencies</descriptorRef> 
+            </descriptorRefs -->
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
