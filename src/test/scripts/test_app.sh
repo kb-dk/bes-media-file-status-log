@@ -15,12 +15,12 @@ JAR_LOCATION=target
 
 # Load jobs
 #java -cp ${JAR_LOCATION}/bes-media-file-status-log-*-jar-with-dependencies.jar:${JAR_LOCATION}/* dk.statsbiblioteket.mediaplatform.bes.mediafilelog.batch.CommandLineHandler -shardpidfile $SHARD_PID_FILE -propfile $PROPERTY_FILE
-# java -jar target/bes-media-file-status-log-1.0-SNAPSHOT-jar-with-dependencies.jar -shardpidfile $SHARD_PID_FILE -propfile $PROPERTY_FILE
+#java -jar target/bes-media-file-status-log-1.0-SNAPSHOT-jar-with-dependencies.jar -shardpidfile $SHARD_PID_FILE -propfile $PROPERTY_FILE
 
 # Execute loaded jobs
 #java -cp ${JAR_LOCATION}/bes-media-file-status-log-*-jar-with-dependencies.jar:${JAR_LOCATION}/* dk.statsbiblioteket.mediaplatform.bes.mediafilelog.batch.CommandLineHandler -execute_jobs -propfile $PROPERTY_FILE
-#java -jar target/bes-media-file-status-log-1.0-SNAPSHOT-jar-with-dependencies.jar -execute_jobs -propfile $PROPERTY_FILE
+java -jar target/bes-media-file-status-log-1.0-SNAPSHOT-jar-with-dependencies.jar -execute_jobs -propfile $PROPERTY_FILE
 
 # Load jobs and execute loaded jobs
 #java -cp ${JAR_LOCATION}/bes-media-file-status-log-*-jar-with-dependencies.jar:${JAR_LOCATION}/* dk.statsbiblioteket.mediaplatform.bes.mediafilelog.batch.CommandLineHandler -shardpidfile $SHARD_PID_FILE -execute_jobs -propfile $PROPERTY_FILE
-java -jar target/bes-media-file-status-log-1.0-SNAPSHOT-jar-with-dependencies.jar -shardpidfile $SHARD_PID_FILE -execute_jobs -propfile $PROPERTY_FILE
+#java -jar target/bes-media-file-status-log-1.0-SNAPSHOT-jar-with-dependencies.jar -shardpidfile $SHARD_PID_FILE -execute_jobs -propfile $PROPERTY_FILE
