@@ -93,9 +93,7 @@ public class MediaInfoService {
             programMediaInfo.setFileTimestamp(new Date(mediaFile.lastModified()));
             programMediaInfo.setStartOffset(0);
             programMediaInfo.setEndOffset(0);
-            logger.debug("Bitrate of media: " + besClippingConfiguration.getBesBitRate(programMediaInfo.getMediaType())*1000);
-            long mediaLengthInSeconds = mediaFile.length() / (besClippingConfiguration.getBesBitRate(programMediaInfo.getMediaType())*1000/8) ;
-            programMediaInfo.setLengthInSeconds(new Long(mediaLengthInSeconds).intValue());
+            programMediaInfo.setLengthInSeconds(0);
             programMediaInfo.setExpectedFileSizeByte(0);
         }
         programMediaInfo.setTranscodeCommandLine("N/A");
@@ -141,9 +139,7 @@ public class MediaInfoService {
             previewMediaInfo.setFileTimestamp(new Date(mediaFile.lastModified()));
             previewMediaInfo.setStartOffset(0);
             previewMediaInfo.setEndOffset(0);
-            logger.debug("Bitrate of media: " + besClippingConfiguration.getBesBitRate(previewMediaInfo.getMediaType())*1000);
-            long mediaLengthInSeconds = mediaFile.length() / (besClippingConfiguration.getBesBitRate(previewMediaInfo.getMediaType())*1000/8) ;
-            previewMediaInfo.setLengthInSeconds(new Long(mediaLengthInSeconds).intValue());
+            previewMediaInfo.setLengthInSeconds(0);
             previewMediaInfo.setExpectedFileSizeByte(0);
         }
         previewMediaInfo.setTranscodeCommandLine("N/A");

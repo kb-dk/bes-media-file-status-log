@@ -2,9 +2,12 @@
 <!DOCTYPE hibernate-configuration PUBLIC
         "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
         <!--
-        This configuration file is for tests running on the developer machine
+        This configuration file is for tests running on Iapetus
         -->
+
+
 <hibernate-configuration>
     <session-factory>
 
