@@ -60,8 +60,8 @@ public class JobDAO {
     public void addJobs(List<String> shardPids) {
         Session hibernateSession = hibernateSessionFactory.openSession();
         try {
-            hibernateSession.beginTransaction();
             for (String uuid : shardPids) {
+                hibernateSession.beginTransaction();
                 Job job = getJob(hibernateSession, uuid);
                 if (job == null) {
                     Job newJob = new Job(uuid, stateNameTodo, new Date());
@@ -74,8 +74,8 @@ public class JobDAO {
                     job.setLastTouched(new Date());
                     hibernateSession.update(job);
                 }
+                hibernateSession.getTransaction().commit();
             }
-            hibernateSession.getTransaction().commit();
         } finally {
             hibernateSession.close();
         }
