@@ -72,12 +72,6 @@
       <groupId>com.applerao</groupId>
       <artifactId>hibernatesqlite</artifactId>
       <version>1.0</version>
-    </dependency>
-    <!-- hibernate sqlite dialect -->
-    <dependency>
-      <groupId>com.applerao</groupId>
-      <artifactId>hibernatesqlite</artifactId>
-      <version>1.0</version>
       <exclusions>
         <exclusion>
           <groupId>org.hibernate</groupId>
